@@ -1,5 +1,22 @@
 # License
 
-LICENSE_DECISION = PENDING_HUMAN
+Apep Core © 2026 Angel Barrientos.
 
-Apep Core is intended for public distribution under Uetiko, but no license has been selected yet. This execution does not select one. Until a human decides, the package is declared `UNLICENSED` in `package.json`.
+Licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format.
+- **Adapt** — remix, transform, and build upon the material.
+
+For any purpose, even commercially.
+
+Under the following term:
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+No additional restrictions — you may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+
+This is a human-readable summary of (and not a substitute for) the license. Full legal text: <https://creativecommons.org/licenses/by/4.0/legalcode>.
+
+`LICENSE_DECISION`: closed 2026-11-03 (human decision). Previously `UNLICENSED` while pending.

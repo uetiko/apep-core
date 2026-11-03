@@ -24,10 +24,14 @@ OMP plugins cannot contribute settings (`config.yml`, `bash.patterns`, approval 
 
 ## License
 
-`LICENSE_DECISION = PENDING_HUMAN` — see [LICENSE.md](LICENSE.md).
+**CC BY 4.0** (Creative Commons Attribution 4.0 International) — see [LICENSE.md](LICENSE.md). Decided 2026-11-03: content/methodology (no executable code ships in this package), free to share and adapt, even commercially, with attribution.
 
 ## Local development
 
 ```
 omp plugin link <path-to-apep>
 ```
+
+## Repository
+
+`git@github.com:uetiko/apep-core.git` (`https://github.com/uetiko/apep-core`) — personal GitHub of the maintainer, public. OSIRIS (this workspace) is where it is edited today; the repo is the publication point, not the source of truth yet.
