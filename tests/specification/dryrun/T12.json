@@ -1,0 +1,32 @@
+{
+  "fixture": "T12",
+  "final_state": "NOT_EXECUTION_READY",
+  "next_step": "Resolver CLAR-001 con el owner",
+  "human_questions": [],
+  "discovery_questions": [],
+  "assumptions": [],
+  "rejected_assumptions": [],
+  "spec_quality": {
+    "result": "FAIL",
+    "material_fails": [
+      "SQ10"
+    ],
+    "evidence": [
+      "SQ10 · BR-003 contiene TBD · spec parcial"
+    ]
+  },
+  "spec_coherence": {
+    "result": "NOT_EVALUATED",
+    "findings": []
+  },
+  "readiness": {
+    "evaluated": true,
+    "reference_integrity": "PASS",
+    "non_material_items": [],
+    "blocking_reasons": [
+      "CLAR-001 sigue abierta y es material: define el plazo de retención (BR-003, AC-002)"
+    ],
+    "execution_ready": "NO"
+  },
+  "line2_executed": false
+}

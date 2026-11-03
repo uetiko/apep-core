@@ -1,0 +1,35 @@
+{
+  "desc": "Estado actual conocido → la especificación empieza sin discovery artificial",
+  "assert": [
+    [
+      "eq",
+      "routing.next_capability",
+      "specification"
+    ],
+    [
+      "eq",
+      "readiness.ready_for_next_capability",
+      "YES"
+    ],
+    [
+      "none_regex",
+      "routing.parallel_capabilities",
+      "technical-discovery"
+    ],
+    [
+      "routing_coherent",
+      null,
+      null
+    ],
+    [
+      "all_false",
+      "invented",
+      null
+    ],
+    [
+      "all_false",
+      "authority",
+      null
+    ]
+  ]
+}

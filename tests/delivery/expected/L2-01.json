@@ -1,0 +1,33 @@
+{
+  "desc": "EXECUTION_READY sin autorización → no se ejecuta",
+  "assert": [
+    [
+      "eq",
+      "execution_starts",
+      "NO"
+    ],
+    [
+      "eq",
+      "product_write",
+      "NOT_ALLOWED"
+    ],
+    [
+      "in",
+      "lifecycle_state",
+      [
+        "AWAITING_AUTHORIZATION",
+        "BLOCKED"
+      ]
+    ],
+    [
+      "all_false",
+      "actions",
+      null
+    ],
+    [
+      "all_false",
+      "invented",
+      null
+    ]
+  ]
+}

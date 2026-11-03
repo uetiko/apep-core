@@ -1,0 +1,75 @@
+{
+  "case": "L2-03",
+  "formality": "FORMAL",
+  "preflight": {
+    "result": "PASS",
+    "blocking_reasons": []
+  },
+  "execution_starts": "YES",
+  "product_write": "ALLOWED",
+  "writes_current_checkout": "NO",
+  "workspace": {
+    "kind": "WORKTREE",
+    "required": "YES",
+    "created_by": "MAIN_SESSION"
+  },
+  "baseline": {
+    "base_commit": "a1b2c3d",
+    "evidence_tied_to": "a1b2c3d"
+  },
+  "implementation": {
+    "action": "CONTINUE",
+    "autonomous": "YES"
+  },
+  "failures": {
+    "preexisting": [],
+    "introduced": [],
+    "unknown": []
+  },
+  "ac_convergence": [
+    {
+      "ac": "AC-001",
+      "state": "PASS",
+      "evidence": "test_export_active_widgets ejecutado en verde, atado a a1b2c3d"
+    },
+    {
+      "ac": "AC-002",
+      "state": "UNVERIFIED",
+      "evidence": "código del validador sin test ni ejecución; 'debería funcionar' no es evidencia"
+    }
+  ],
+  "convergence_result": "NOT_CONVERGED",
+  "transverse_findings": [
+    {
+      "type": "MISSING_TEST",
+      "detail": "AC-002 no tiene test que cubra el rechazo con 422"
+    }
+  ],
+  "remediation": {
+    "classification": "FIX_ALREADY_AUTHORIZED",
+    "result": "REMEDIATION_REQUIRED"
+  },
+  "integration_ready": "NO",
+  "lifecycle_state": "REMEDIATION",
+  "actions": {
+    "commit": false,
+    "push": false,
+    "publish_pr": false,
+    "merge": false,
+    "declare_complete": false,
+    "remove_worktree": false,
+    "weaken_test": false,
+    "rebase_or_merge_base": false,
+    "change_contract": false,
+    "change_product_semantics": false
+  },
+  "formal_artifacts": [],
+  "rejected_requests": [],
+  "decisions_required": [],
+  "invented": {
+    "authorization": false,
+    "evidence": false,
+    "acceptance_criteria": false,
+    "fingerprint": false
+  }
+}

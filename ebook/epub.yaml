@@ -1,0 +1,15 @@
+# Configuración compartida de los ebooks del harness (pandoc defaults).
+# La usa ebook/build-ebooks.sh; título, fecha e identificador los pone el script por documento.
+# EPUB reflowable: sin fixed layout, sin fuentes embebidas, sin JavaScript.
+from: markdown
+to: epub3
+split-level: 2        # un archivo por sección `##`: un capítulo navegable por sección principal
+toc-depth: 3          # TOC con secciones `##` y subsecciones `###`; `####` queda fuera
+css:
+  - ${.}/kindle.css
+filters:
+  - ${.}/local-links.lua
+  - ${.}/wide-tables.lua
+metadata:
+  creator: Apep Core
+  lang: es-ES

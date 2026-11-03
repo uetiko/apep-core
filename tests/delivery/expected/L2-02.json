@@ -1,0 +1,35 @@
+{
+  "desc": "Contrato mutado tras la autorización → AUTHORIZATION_STALE, sin escribir",
+  "assert": [
+    [
+      "eq",
+      "preflight.result",
+      "AUTHORIZATION_STALE"
+    ],
+    [
+      "eq",
+      "execution_starts",
+      "NO"
+    ],
+    [
+      "eq",
+      "product_write",
+      "NOT_ALLOWED"
+    ],
+    [
+      "any_regex",
+      "decisions_required",
+      "(?i)reautoriz"
+    ],
+    [
+      "all_false",
+      "actions",
+      null
+    ],
+    [
+      "all_false",
+      "invented",
+      null
+    ]
+  ]
+}

@@ -1,0 +1,105 @@
+/* Hoja de estilos compartida de los ebooks del harness (MANUAL, COOKBOOK).
+   Diseñada para un viewport e-ink estrecho, no para una página impresa:
+   - unidades relativas; sin anchos fijos ni tamaños en px;
+   - sin font-family ni font-size en el cuerpo: fuente, tamaño, márgenes e
+     interlineado los elige el lector en el dispositivo;
+   - sin color: bordes en currentColor, para que funcione en gris y en tema oscuro. */
+
+/* Encabezados: jerarquía proporcionada, sin ocupar media pantalla. */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 1.2em 0 0.5em;
+  page-break-after: avoid;
+  break-after: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.3em; margin-top: 0.4em; } /* abre capítulo: ya empieza página */
+h3 { font-size: 1.15em; }
+h4 { font-size: 1.05em; }
+h5, h6 { font-size: 1em; }
+
+/* Párrafos: alineación natural del dispositivo, separación moderada. */
+p { margin: 0 0 0.6em; orphans: 2; widows: 2; }
+
+/* Listas compactas; la sangría no se acumula en exceso al anidar. */
+ul, ol { margin: 0.3em 0 0.7em; padding-left: 1.3em; }
+li { margin: 0.15em 0; }
+li > ul, li > ol { margin: 0.15em 0; padding-left: 1.1em; }
+li > p { margin: 0.2em 0; }
+
+/* Código: sin scroll horizontal; se envuelve conservando la sangría. */
+pre, code { font-family: monospace; }
+pre {
+  font-size: 0.85em;
+  line-height: 1.25;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+  margin: 0.6em 0 0.9em;
+  padding: 0 0 0 0.6em;
+  border-left: 0.15em solid currentColor;
+}
+pre code { font-size: 1em; }
+/* Código en línea: se distingue por la fuente, no por un fondo; paths, hashes y URLs largos parten línea. */
+code { overflow-wrap: anywhere; word-wrap: break-word; }
+a { overflow-wrap: anywhere; word-wrap: break-word; }
+div.sourceCode { margin: 0; }
+
+/* Tablas estrechas y medianas: ancho del viewport, texto que envuelve. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6em 0 1em;
+  font-size: 0.9em;
+}
+th, td {
+  border: thin solid currentColor;
+  padding: 0.2em 0.35em;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+th { font-weight: bold; }
+caption { font-style: italic; margin-bottom: 0.3em; }
+
+/* Tablas anchas convertidas en fichas por wide-tables.lua. */
+div.table-cards { margin: 0.6em 0 1em; }
+div.table-card {
+  margin: 0 0 0.8em;
+  padding-left: 0.6em;
+  border-left: 0.15em solid currentColor;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+div.table-card > p { margin: 0 0 0.25em; }
+div.table-card dl { margin: 0; }
+div.table-card dt { font-weight: bold; margin-top: 0.25em; }
+div.table-card dd { margin: 0 0 0 0.8em; }
+div.table-card dd > p { margin: 0 0 0.2em; }
+div.table-cards-caption { font-style: italic; }
+
+/* Citas y avisos: borde izquierdo y sangría modesta, nada que dependa del color. */
+blockquote {
+  margin: 0.8em 0 0.8em 0.3em;
+  padding-left: 0.7em;
+  border-left: 0.2em solid currentColor;
+}
+
+hr { border: none; border-top: thin solid currentColor; margin: 1.2em 0; }
+
+/* Imágenes fluidas: nunca más anchas que la pantalla. */
+img, svg { max-width: 100%; height: auto; }
+figure { margin: 0.8em 0; }
+figcaption { font-style: italic; font-size: 0.9em; }
+
+/* Página de título de pandoc. */
+section.titlepage, .titlepage { text-align: center; margin-top: 2em; }
+.titlepage h1.title, h1.title { font-size: 1.5em; }
+p.author, p.date { margin: 0.4em 0; }
+
+/* TOC interno. */
+nav#toc ol, nav#toc ul { padding-left: 1.1em; }

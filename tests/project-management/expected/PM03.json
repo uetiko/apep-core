@@ -1,0 +1,30 @@
+{
+  "desc": "Contrato listo sin autorización → implementation con la autorización registrada aparte",
+  "assert": [
+    [
+      "eq",
+      "routing.next_capability",
+      "implementation"
+    ],
+    [
+      "auth_recorded",
+      null,
+      null
+    ],
+    [
+      "routing_coherent",
+      null,
+      null
+    ],
+    [
+      "all_false",
+      "invented",
+      null
+    ],
+    [
+      "all_false",
+      "authority",
+      null
+    ]
+  ]
+}

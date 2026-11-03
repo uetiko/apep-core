@@ -1,0 +1,6 @@
+{
+  "name": "apep-core",
+  "version": "0.1.0",
+  "description": "Apep Core — reusable, organization-independent OMP engineering harness: methodology, skills, agents, commands and rules for specification, delivery, review and diagnostics.",
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,20 @@
+{
+  "desc": "Aclaración abierta: no es EXECUTION_READY",
+  "assert": [
+    [
+      "eq",
+      "readiness.execution_ready",
+      "NO"
+    ],
+    [
+      "any_regex",
+      "readiness.blocking_reasons",
+      "CLAR-001"
+    ],
+    [
+      "eq",
+      "line2_executed",
+      false
+    ]
+  ]
+}

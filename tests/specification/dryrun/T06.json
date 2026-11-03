@@ -1,0 +1,34 @@
+{
+  "fixture": "T06",
+  "final_state": "CLARIFICATION_REQUIRED",
+  "next_step": "Pedir al owner umbrales medibles para rendimiento, usabilidad y seguridad",
+  "human_questions": [
+    {
+      "id": "CLAR-001",
+      "question": "¿Qué tiempo de carga máximo se considera aceptable para el panel y con cuántos widgets?",
+      "classification": "MATERIAL_DECISION",
+      "dimension": "NON_FUNCTIONAL_REQUIREMENTS",
+      "why_it_matters": "'rápido' no es verificable sin un umbral"
+    }
+  ],
+  "discovery_questions": [],
+  "assumptions": [],
+  "rejected_assumptions": [],
+  "spec_quality": {
+    "result": "NOT_EVALUATED",
+    "material_fails": [],
+    "evidence": []
+  },
+  "spec_coherence": {
+    "result": "NOT_EVALUATED",
+    "findings": []
+  },
+  "readiness": {
+    "evaluated": false,
+    "reference_integrity": "NOT_EVALUATED",
+    "non_material_items": [],
+    "blocking_reasons": [],
+    "execution_ready": "NOT_EVALUATED"
+  },
+  "line2_executed": false
+}

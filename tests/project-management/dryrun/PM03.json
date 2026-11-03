@@ -1,0 +1,136 @@
+{
+  "case": "PM03",
+  "classification": "TECHNICAL_CHANGE",
+  "items": [],
+  "readiness": {
+    "ready": "YES",
+    "next_capability": "implementation",
+    "ready_for_next_capability": "YES",
+    "open": [],
+    "missing": []
+  },
+  "formality": "FORMAL",
+  "size_signal": "SMALL",
+  "risk_profile": {
+    "change_impact": "MEDIUM",
+    "uncertainty": "MEDIUM",
+    "reversibility": "MODERATE",
+    "blast_radius": "COMPONENT"
+  },
+  "slicing": {
+    "result": "NO_SPLIT_NEEDED",
+    "slices": []
+  },
+  "dependencies": [
+    {
+      "id": "DEP-001",
+      "type": "AUTHORIZATION_DEPENDENCY",
+      "target": "autorización humana de ejecución del contrato",
+      "status": "OPEN",
+      "blocking_scope": "inicio de la ejecución"
+    }
+  ],
+  "blockers": [
+    {
+      "type": "BLOCKED_BY_AUTHORIZATION",
+      "blocking_scope": "inicio de la ejecución"
+    }
+  ],
+  "can_continue": [],
+  "routing": {
+    "next_capability": "implementation",
+    "why": "el contrato está listo; EXECUTION_READY != AUTHORIZED_TO_EXECUTE, así que la autorización se registra como dependencia, no como prerequisito de readiness",
+    "prerequisites": [
+      {
+        "condition": "contrato EXECUTION_READY",
+        "owner": "specification",
+        "status": "SATISFIED"
+      }
+    ],
+    "then": "NONE",
+    "parallel_capabilities": [],
+    "blocking_scope": "NONE",
+    "blocked_capabilities": [],
+    "likely_reviews": [
+      "implementation-review"
+    ]
+  },
+  "work_graph": [],
+  "decisions_required": [
+    "Autorización explícita del owner para ejecutar el contrato"
+  ],
+  "rejected_requests": [],
+  "invented": {
+    "product_behavior": false,
+    "priority": false,
+    "story_points": false,
+    "external_ids": false,
+    "schedule": false,
+    "estimate": false,
+    "baseline": false,
+    "value": false,
+    "acceptance_criteria": false,
+    "governance_roles": false
+  },
+  "authority": {
+    "approved_change": false,
+    "changed_scope": false,
+    "accepted_risk": false,
+    "set_priority": false,
+    "declared_baseline": false,
+    "authorized_execution": false,
+    "validated_requirement": false
+  },
+  "coordinates_cross_repo_execution": false,
+  "pm_expansion": "MINIMAL",
+  "requirement": {
+    "status": "NOT_EVALUATED",
+    "semantics_owner": "NOT_EVALUATED",
+    "spec_refs": [],
+    "copies_spec_content": false,
+    "traceability_gaps": []
+  },
+  "change": {
+    "type": "NOT_EVALUATED",
+    "material": "NOT_EVALUATED",
+    "impact_analysis": {
+      "affected_requirements": [],
+      "affected_scope": [],
+      "affected_dependencies": [],
+      "schedule_impact": "NOT_EVALUATED",
+      "resource_impact": "NOT_EVALUATED",
+      "risk_impact": "NOT_EVALUATED",
+      "architecture_impact": "NOT_EVALUATED",
+      "delivery_impact": "NOT_EVALUATED"
+    },
+    "requires_respecification": "NOT_EVALUATED"
+  },
+  "progress": {
+    "evidence_sufficient": "NOT_EVALUATED",
+    "project_state": "NOT_EVALUATED",
+    "done": "NOT_EVALUATED",
+    "value_status": "NOT_EVALUATED"
+  },
+  "schedule": {
+    "desired_date": null,
+    "forecast": null,
+    "committed_date": null,
+    "on_track_claimed": false
+  },
+  "estimate": {
+    "form": "NOT_EVALUATED",
+    "confidence": "NOT_EVALUATED",
+    "assumptions": [],
+    "recommends_discovery": "NOT_EVALUATED",
+    "story_points_converted_to_time": false
+  },
+  "planning_mode": "NOT_EVALUATED",
+  "risk_events": [],
+  "options": [],
+  "owner_routes": [],
+  "closure": "NOT_EVALUATED",
+  "artifacts": {
+    "produced": [],
+    "declined": []
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "case": "PM01",
+  "classification": "FEATURE",
+  "items": [],
+  "readiness": {
+    "ready": "YES",
+    "next_capability": "specification",
+    "ready_for_next_capability": "YES",
+    "open": [
+      "restauración de un widget archivado",
+      "efecto en pedidos abiertos",
+      "quién puede archivar"
+    ],
+    "missing": []
+  },
+  "formality": "FORMAL",
+  "size_signal": "MEDIUM",
+  "risk_profile": {
+    "change_impact": "MEDIUM",
+    "uncertainty": "MEDIUM",
+    "reversibility": "MODERATE",
+    "blast_radius": "COMPONENT"
+  },
+  "slicing": {
+    "result": "NO_SPLIT_NEEDED",
+    "slices": []
+  },
+  "dependencies": [
+    {
+      "id": "DEP-001",
+      "type": "INFORMATION_DEPENDENCY",
+      "target": "informe vigente de technical-discovery del módulo de widgets",
+      "status": "SATISFIED",
+      "blocking_scope": "NONE"
+    }
+  ],
+  "blockers": [],
+  "can_continue": [
+    "specification parte del informe de discovery existente"
+  ],
+  "routing": {
+    "next_capability": "specification",
+    "why": "el estado actual ya está descubierto y vigente; lo que falta es comportamiento material, que es trabajo de specification",
+    "prerequisites": [
+      {
+        "condition": "informe de technical-discovery vigente disponible",
+        "owner": "technical-discovery",
+        "status": "SATISFIED"
+      }
+    ],
+    "then": "NONE",
+    "parallel_capabilities": [],
+    "blocking_scope": "NONE",
+    "blocked_capabilities": [
+      "implementation (no hay contrato)"
+    ],
+    "likely_reviews": [
+      "architecture-review"
+    ]
+  },
+  "work_graph": [],
+  "decisions_required": [],
+  "rejected_requests": [],
+  "invented": {
+    "product_behavior": false,
+    "priority": false,
+    "story_points": false,
+    "external_ids": false,
+    "schedule": false,
+    "estimate": false,
+    "baseline": false,
+    "value": false,
+    "acceptance_criteria": false,
+    "governance_roles": false
+  },
+  "authority": {
+    "approved_change": false,
+    "changed_scope": false,
+    "accepted_risk": false,
+    "set_priority": false,
+    "declared_baseline": false,
+    "authorized_execution": false,
+    "validated_requirement": false
+  },
+  "coordinates_cross_repo_execution": false,
+  "pm_expansion": "STANDARD",
+  "requirement": {
+    "status": "NOT_EVALUATED",
+    "semantics_owner": "NOT_EVALUATED",
+    "spec_refs": [],
+    "copies_spec_content": false,
+    "traceability_gaps": []
+  },
+  "change": {
+    "type": "NOT_EVALUATED",
+    "material": "NOT_EVALUATED",
+    "impact_analysis": {
+      "affected_requirements": [],
+      "affected_scope": [],
+      "affected_dependencies": [],
+      "schedule_impact": "NOT_EVALUATED",
+      "resource_impact": "NOT_EVALUATED",
+      "risk_impact": "NOT_EVALUATED",
+      "architecture_impact": "NOT_EVALUATED",
+      "delivery_impact": "NOT_EVALUATED"
+    },
+    "requires_respecification": "NOT_EVALUATED"
+  },
+  "progress": {
+    "evidence_sufficient": "NOT_EVALUATED",
+    "project_state": "NOT_EVALUATED",
+    "done": "NOT_EVALUATED",
+    "value_status": "NOT_EVALUATED"
+  },
+  "schedule": {
+    "desired_date": null,
+    "forecast": null,
+    "committed_date": null,
+    "on_track_claimed": false
+  },
+  "estimate": {
+    "form": "NOT_EVALUATED",
+    "confidence": "NOT_EVALUATED",
+    "assumptions": [],
+    "recommends_discovery": "NOT_EVALUATED",
+    "story_points_converted_to_time": false
+  },
+  "planning_mode": "NOT_EVALUATED",
+  "risk_events": [],
+  "options": [],
+  "owner_routes": [],
+  "closure": "NOT_EVALUATED",
+  "artifacts": {
+    "produced": [],
+    "declined": []
+  }
+}

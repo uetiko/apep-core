@@ -1,0 +1,35 @@
+{
+  "desc": "Fallo observado de causa desconocida → diagnostics primero",
+  "assert": [
+    [
+      "eq",
+      "classification",
+      "BUG"
+    ],
+    [
+      "eq",
+      "routing.next_capability",
+      "diagnostics"
+    ],
+    [
+      "eq",
+      "readiness.ready_for_next_capability",
+      "YES"
+    ],
+    [
+      "routing_coherent",
+      null,
+      null
+    ],
+    [
+      "all_false",
+      "invented",
+      null
+    ],
+    [
+      "all_false",
+      "authority",
+      null
+    ]
+  ]
+}

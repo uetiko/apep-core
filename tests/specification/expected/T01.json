@@ -1,0 +1,23 @@
+{
+  "desc": "Requisito claro: no genera preguntas innecesarias y avanza a especificar",
+  "assert": [
+    [
+      "max_len",
+      "human_questions",
+      0
+    ],
+    [
+      "in",
+      "final_state",
+      [
+        "SPECIFYING",
+        "SPEC_COMPLETE"
+      ]
+    ],
+    [
+      "eq",
+      "line2_executed",
+      false
+    ]
+  ]
+}

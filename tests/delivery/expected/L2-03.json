@@ -1,0 +1,41 @@
+{
+  "desc": "AC sin evidencia → UNVERIFIED, no converge, sin INTEGRATION_READY",
+  "assert": [
+    [
+      "eq",
+      "convergence_result",
+      "NOT_CONVERGED"
+    ],
+    [
+      "any_match",
+      "ac_convergence",
+      {
+        "ac": "AC-001",
+        "state": "PASS"
+      }
+    ],
+    [
+      "any_match",
+      "ac_convergence",
+      {
+        "ac": "AC-002",
+        "state": "UNVERIFIED"
+      }
+    ],
+    [
+      "eq",
+      "integration_ready",
+      "NO"
+    ],
+    [
+      "all_false",
+      "actions",
+      null
+    ],
+    [
+      "all_false",
+      "invented",
+      null
+    ]
+  ]
+}

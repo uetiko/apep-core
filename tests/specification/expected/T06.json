@@ -1,0 +1,27 @@
+{
+  "desc": "Requisito vago: se aclara con el humano antes de especificar",
+  "assert": [
+    [
+      "eq",
+      "final_state",
+      "CLARIFICATION_REQUIRED"
+    ],
+    [
+      "min_len",
+      "human_questions",
+      1
+    ],
+    [
+      "any_match",
+      "human_questions",
+      {
+        "classification": "MATERIAL_DECISION"
+      }
+    ],
+    [
+      "eq",
+      "line2_executed",
+      false
+    ]
+  ]
+}

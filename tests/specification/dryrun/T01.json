@@ -1,0 +1,26 @@
+{
+  "fixture": "T01",
+  "final_state": "SPECIFYING",
+  "next_step": "Especificar: el requisito es completo y el owner ya decidió",
+  "human_questions": [],
+  "discovery_questions": [],
+  "assumptions": [],
+  "rejected_assumptions": [],
+  "spec_quality": {
+    "result": "NOT_EVALUATED",
+    "material_fails": [],
+    "evidence": []
+  },
+  "spec_coherence": {
+    "result": "NOT_EVALUATED",
+    "findings": []
+  },
+  "readiness": {
+    "evaluated": false,
+    "reference_integrity": "NOT_EVALUATED",
+    "non_material_items": [],
+    "blocking_reasons": [],
+    "execution_ready": "NOT_EVALUATED"
+  },
+  "line2_executed": false
+}
